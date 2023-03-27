@@ -2,7 +2,7 @@ import redis
 import json
 import logging
 
-class RedisStorage:
+class BigglesStorage:
 
     def __init__(self, endpoint, port=6379, db=0):
         self.redis = redis.Redis(host=endpoint, port=port, db=db, decode_responses=True, logger=None)
